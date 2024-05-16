@@ -10,12 +10,10 @@ body {
 .sketchArea {
     display: flex;
     margin: 20vw auto;
-    width: 80vw;
-    height: 80vh;
     flex-wrap: wrap;
 }
 
 .cell {
     border: 1px solid rgba(105, 105, 105, 0.507);
-    background-color: lightgray;
+    background-color: white;
 }
