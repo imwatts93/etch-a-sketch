@@ -8,11 +8,11 @@ function createGrid() {
         const cell = document.createElement("div");
         
         cell.style.width = `${(gridSide / cols) - 2}px`;
-        cell.style.width = `${(girdSide / cols) - 2}px`;
+        cell.style.width = `${(gridSide / cols) - 2}px`;
         cell.classList.add("cell");
         
         sketchArea.appendChild(cell);
     }
 }
 
-createGrid()
+createGrid();
