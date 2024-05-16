@@ -14,12 +14,12 @@ body {
 }
 
 .cell {
-    border: 1px solid rgba(105, 105, 105, 0.507);
+    border: 1px solid rgba(233, 233, 233, 0.336);
     background-color: white;
 }
 
 #sliderContainer {
-    margin: 0 auto;
+    margin: 0 auto 20vh auto;
 }
 
 .slider {
