@@ -1,7 +1,18 @@
-const container = document.querySelector("#container");
+const gridSide = 600;
+const sketchArea = document.querySelector("#sketchArea");
+let rows = 16;
+let cols = 16;
 
-for (let i = 0; i < 256; i ++) {
+function createGrid() {
+    for (let i = 0; i < (rows * cols); i ++) {
         const cell = document.createElement("div");
+        
+        cell.style.width = `${(gridSide / cols) - 2}px`;
+        cell.style.width = `${(girdSide / cols) - 2}px`;
         cell.classList.add("cell");
-        container.appendChild(cell);
+        
+        sketchArea.appendChild(cell);
     }
+}
+
+createGrid()

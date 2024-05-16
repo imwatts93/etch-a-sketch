@@ -1,12 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     display: flex;
     border: 1px solid black;
-    width: 500px;
-    height: 500px;
+    width: 80vw;
+    height: 80vh;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
 }
 
 .cell {
@@ -15,6 +18,4 @@
     background-color: lightgray;
     width: 20px;
     height: 20px;
-    margin: 0;
-    padding: 0;
 }
