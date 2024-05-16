@@ -30,10 +30,18 @@ function createGrid(cellsPerSide) {
     }
 }
 
+//remove cells when changing size
 function removeGridCells() {
     while (sketchArea.firstChild) {
         sketchArea.removeChild(sketchArea.firstChild);
     }
+}
+
+slider.oninput = function() {
+    let txt = `${this.value} x ${this.value} (Resolution)`
+    sliderValue.innerHTML = txt
+    removeGridCells();
+    createGrid(this.value);
 }
 
 createGrid(16);
